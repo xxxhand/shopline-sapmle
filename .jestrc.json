@@ -1,0 +1,28 @@
+{
+  "collectCoverage": true,
+  "coverageDirectory": "./public/unit-test/coverage",
+  "testEnvironment": "node",
+  "reporters": [
+      "default",
+      [
+          "./node_modules/jest-html-reporters",
+          {
+              "pageTitle": "Test report",
+              "publicPath": "./public/unit-test",
+              "filename": "index.html",
+              "expand": false
+          }
+      ]
+  ],
+  "coveragePathIgnorePatterns": [
+      "/node_modules/"
+  ],
+  "testMatch": [
+		"**/__tests__/**/*.[jt]s?(x)",
+		"**/?(*.)+(spec|test).[jt]s?(x)",
+		"!**/__helpers__/**"
+	],
+  "coverageProvider": "v8",
+  "testResultsProcessor": "jest-sonar-reporter",
+  "testTimeout": 60000
+}
