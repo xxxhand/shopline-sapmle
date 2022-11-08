@@ -7,7 +7,7 @@ const { apiRouter } = require('./api-router');
 const { CustomMongoClient } = require('./shared/custom-mongo-client');
 
 const _tryInitial = async () => {
-  await CustomMongoClient.tryOpen();
+  return CustomMongoClient.tryOpen();
 }
 
 const _tryTerminate = async () => {
