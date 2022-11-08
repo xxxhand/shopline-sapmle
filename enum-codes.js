@@ -10,7 +10,21 @@ const _productStatus = {
   OFFLINE: 2,
 };
 
+const _paymentTypes = {
+  CREDIT: 1,
+  ATM: 2,
+  CVS: 3,
+};
+
+const _orderStatus = {
+  UNPAID: 1,
+  PAID: 2,
+  CANCEL: 3,
+}
+
 module.exports = {
   collectionNames: _colNames,
   productStatus: _productStatus,
+  paymentTypes: _paymentTypes,
+  orderStatus: _orderStatus,
 };
