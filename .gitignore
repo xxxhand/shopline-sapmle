@@ -14,3 +14,5 @@ logs
 *debug*
 .env
 *.xml
+*.zip
+nodejs
